@@ -1,0 +1,10 @@
+<h2>Lista de Discos</h2>
+<ul>
+    {% for disco in Discos %}
+        <li>{{ disco.titulo }} {{ disco.genero }}<li> 
+        
+    </li>
+    {% empty %}
+        <li>No hay discos disponibles.</li>
+    {% endfor %}
+</ul>

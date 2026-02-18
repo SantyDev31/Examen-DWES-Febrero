@@ -9,6 +9,6 @@
         {{ form.fecha_nacimiento.label_tag }} {{ form.fecha_nacimiento }}
         
         <button type="submit">Guardar Autor</button>
-        <a href="{% url 'autores_lista' %}">Cancelar</a>
+        {% comment %} <a href="{% url 'autores_lista' %}">Cancelar</a> {% endcomment %}
     </form>
 {% endblock %}

@@ -6,6 +6,7 @@ class Autor(models.Model):
     apellidos = models.CharField(max_length=200)
     fecha_nacimiento = models.DateField()
     
+    
     class Meta:
         ordering = ['apellidos', 'nombre']
     

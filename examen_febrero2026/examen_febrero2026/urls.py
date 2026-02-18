@@ -16,7 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from socios.views import crear_disco, discos_lista
+from publicaciones.views import crear_autor, autores_lista
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('autor-create/', crear_autor.as_view(), name="autor-create"),
+    path('autor-list/', autores_lista.as_view(), name="autor-list"),
+    path('publicacion-create/', crear_disco.as_view(), name="publicacion-create"),
+    path('publicacion-list/', discos_lista.as_view(),name="publicacion-list"),
+
 ]
